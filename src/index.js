@@ -44,7 +44,6 @@ async function onLoad(entries, observer) {
     });
 }
 
-
 form.addEventListener('submit', onFetchGallery);
 
 function onFetchGallery(evt) {
@@ -83,8 +82,6 @@ function onFetchGallery(evt) {
             if (data.totalHits >= perPage) {
                 observer.observe(guard);
             }
-
-            
         })
         .catch(err => console.log(err));
 }
@@ -114,6 +111,5 @@ function createGalleryMarkup(images) {
 }
 
 function clearMarkup() {
-    gallery.innerHTML = '';
-
+    gallery.innerHTML = "'';
 }
