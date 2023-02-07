@@ -111,5 +111,5 @@ function createGalleryMarkup(images) {
 }
 
 function clearMarkup() {
-    gallery.innerHTML = "'';
+    gallery.innerHTML = '';
 }
